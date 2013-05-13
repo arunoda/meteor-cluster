@@ -6,7 +6,7 @@ function Cluster() {
 
     var collections = {};
 
-    this.watch = function() {
+    this.sync = function() {
 
         _.each(arguments, function(collection) {
             collections[collection._name] = collection;
