@@ -7,7 +7,7 @@ Meteor is not a toy anymore. People keen to build enterprise apps on top of the 
 
 But when running cluster of meteor nodes, meteor is not realtime anymore(between nodes). It get synced but takes few seconds.
 
-** Here comes the solution - `meteor-cluster` **
+**Here comes the solution - `meteor-cluster`**
 
 ### Installation
 
