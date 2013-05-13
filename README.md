@@ -39,7 +39,6 @@ Meteor.startup(function() {
 ### How to scale
 
 Just fire up new nodes and it just works.
-> you need to use a websocket supported proxy-server/load balancer 
 
 ### API
 
