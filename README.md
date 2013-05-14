@@ -5,7 +5,7 @@ meteor-cluster
 
 Meteor is not a toy anymore. People keen to build enterprise apps on top of the meteor. So people need to run cluster of meteor nodes for several reasons. 
 
-But when running cluster of meteor nodes, meteor is not realtime anymore(between nodes). It get synced but takes few seconds.
+But when running cluster of nodes, meteor is not realtime anymore(between nodes). It get synced but takes few seconds.
 
 **Here comes the solution - `meteor-cluster`**
 
@@ -17,7 +17,7 @@ just run `mrt add cluster`
 
 ### Redis
 
-`meteor-cluster` needs redis to for communicate between nodes. It uses pub/sub functionality of redis.
+`meteor-cluster` uses redis as the communicate channel between nodes. It uses pub/sub functionality of redis.
 So you need to have redis-server running.
 
 If you are new to redis, [read this guide](http://redis.io/topics/quickstart)
@@ -26,10 +26,10 @@ If you are new to redis, [read this guide](http://redis.io/topics/quickstart)
 
 `meteor-cluster` needs to know 
 
-* how to connect to redis
-* what collections it need to sync and 
+* how to connect with redis
+* what collections it needs to sync
 
-run following in the server
+It just a two lines of configuration. Add following inside you server code.
 
 ~~~js
 Meteor.startup(function() {
