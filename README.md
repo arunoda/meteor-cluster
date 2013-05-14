@@ -42,6 +42,11 @@ Meteor.startup(function() {
 
 Just fire up new nodes and it just works.
 
+### Tests
+
+* start `redis-server` before testing
+* `mrt test-packages ./`
+
 ### API
 
 #### Meteor.Cluster.init(redisConfig)
