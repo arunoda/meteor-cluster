@@ -9,6 +9,8 @@ But when running cluster of meteor nodes, meteor is not realtime anymore(between
 
 **Here comes the solution - `meteor-cluster`**
 
+[![Meteor Cluster in Action](http://i.imgur.com/lidwQaW.png)](http://www.youtube.com/watch?v=12NkUJEdFCw&feature=youtu.be)
+
 ### Installation
 
 just run `mrt add cluster`
