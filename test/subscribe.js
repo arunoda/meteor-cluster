@@ -41,4 +41,7 @@ Tinytest.add('update and subscribe', function(test) {
     f.wait();
     test.equal(updatingIds[0], "1");
     test.equal(updatingIds[1], "2");
+
+    cluster.close();
+    pubClient.end();
 });

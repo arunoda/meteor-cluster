@@ -29,6 +29,9 @@ Tinytest.add('insert and publish', function(test) {
     test.equal(args[2], 'insert');
     test.equal(args[3][0]._id, doc._id);
     test.equal(_.keys(args[3][0]), ['_id']);
+
+    redisClient.end();
+    cluster.close();
 });
 
 Tinytest.add('update and publish', function(test) {
@@ -61,6 +64,9 @@ Tinytest.add('update and publish', function(test) {
     test.equal(args[2], 'update');
     test.equal(args[3][0].name, query.name);
     test.equal(args[3][1]['$set'].room, set['$set'].room);
+    
+    redisClient.end();
+    cluster.close();
 });
 
 Tinytest.add('remove and publish', function(test) {
@@ -91,4 +97,7 @@ Tinytest.add('remove and publish', function(test) {
     test.equal(args[1], coll._name);
     test.equal(args[2], 'remove');
     test.equal(args[3][0].name, query.name);
+    
+    redisClient.end();
+    cluster.close();
 });
