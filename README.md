@@ -3,6 +3,8 @@ meteor-cluster
 
 ### Smarter way to run cluster of meteor nodes
 
+#### See: [Meteor Cluster - Introduction & How it works](http://meteorhacks.com/meteor-cluster-introduction-and-how-it-works.html) article
+
 Meteor is not a toy anymore. People keen to build enterprise apps on top of the meteor. So people need to run cluster of meteor nodes for several reasons. 
 
 But when running cluster of nodes, meteor is not realtime anymore(between nodes). It get synced but takes few seconds.
