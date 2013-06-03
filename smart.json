@@ -3,6 +3,6 @@
   "description": "Smarter way to run cluster of meteor nodes",
   "homepage": "https://github.com/arunoda/meteor-cluster",
   "author": "Arunoda Susiripala <arunoda.susiripala@gmail.com>",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "git": "https://github.com/arunoda/meteor-cluster.git"
 }
