@@ -56,8 +56,8 @@ Just fire up new nodes and it just works.
 Initialize and connect to redis.
 
 * redisConfig - null or `{port: 6337, host: "localhost", auth: null, db: null}`
-* alternatively you can pass redis config via `REDIS_URL` env variable
-* REDIS_URL formart: `redis://redis:<password>@<host>:<port>`
+* alternatively you can pass redis config via `CLUSTER_URL` env variable
+* CLUSTER_URL formart: `redis://redis:<password>@<host>:<port>`
 
 #### Meteor.Cluster.sync(collections...)
 
