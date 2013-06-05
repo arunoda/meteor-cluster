@@ -1,4 +1,4 @@
-meteor-cluster
+meteor-cluster [![Build Status](https://travis-ci.org/arunoda/meteor-cluster.png?branch=master)](https://travis-ci.org/arunoda/meteor-cluster)
 ==============
 
 ### Smarter way to run cluster of meteor nodes
