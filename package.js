@@ -12,5 +12,10 @@ Package.on_use(function (api, where) {
 Package.on_test(function (api) {
   api.use(['mongo-livedata'], 'server');
   api.add_files(['lib/redis.js', 'lib/cluster.js'], 'server');
-  api.add_files(['test/redis.js', 'test/publish.js', 'test/subscribe.js'], 'server');
+  api.add_files([
+    'test/redis.js',
+    'test/publish.js',
+    'test/subscribe.js',
+    'test/streams.js'
+  ], 'server');
 });
