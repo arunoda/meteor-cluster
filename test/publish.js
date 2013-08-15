@@ -7,7 +7,7 @@ Tinytest.add('insert and publish', function(test) {
 
   var redisClient = Meteor._createRedisClient();
   redisClient.on('subscribe', function() {
-    f.ret();
+    f.return();
   })
   redisClient.subscribe('collections');
   f.wait();
@@ -18,7 +18,7 @@ Tinytest.add('insert and publish', function(test) {
   var args;
   redisClient.on('message', function(channel, message) {
     args = JSON.parse(message);
-    f.ret();
+    f.return();
   })
   var doc = {_id: "abc", name: "arunoda"};
   coll.insert(doc);
@@ -41,7 +41,7 @@ Tinytest.add('update and publish', function(test) {
 
   var redisClient = Meteor._createRedisClient();
   redisClient.on('subscribe', function() {
-    f.ret();
+    f.return();
   })
   redisClient.subscribe('collections');
   f.wait();
@@ -54,7 +54,7 @@ Tinytest.add('update and publish', function(test) {
   var args;
   redisClient.on('message', function(channel, message) {
     args = JSON.parse(message);
-    f.ret();
+    f.return();
   })
   coll.update(query, set);
   f = new Future();
@@ -76,7 +76,7 @@ Tinytest.add('remove and publish', function(test) {
 
   var redisClient = Meteor._createRedisClient();
   redisClient.on('subscribe', function() {
-    f.ret();
+    f.return();
   })
   redisClient.subscribe('collections');
   f.wait();
@@ -88,7 +88,7 @@ Tinytest.add('remove and publish', function(test) {
   var args;
   redisClient.on('message', function(channel, message) {
     args = JSON.parse(message);
-    f.ret();
+    f.return();
   })
   coll.remove(query);
   f = new Future();

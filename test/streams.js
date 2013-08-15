@@ -22,7 +22,7 @@ Tinytest.addAsync('stream to redis', function(test, done) {
 
   var redisClient = Meteor._createRedisClient();
   redisClient.on('subscribe', function() {
-    f.ret();
+    f.return();
   })
   redisClient.subscribe('streams');
   f.wait();

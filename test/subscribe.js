@@ -14,7 +14,7 @@ Tinytest.add('update and subscribe', function(test) {
     updatingIds.push(query._id);
     orginalUpdate.call(syncColl, query, updateString);
     if(updatingIds.length == 2) {
-      f.ret();
+      f.return();
     }
   };
 
@@ -22,7 +22,7 @@ Tinytest.add('update and subscribe', function(test) {
   syncColl.insert({_id: "2", room: 10});
 
   cluster.onsubscribe = function() {
-    f.ret();
+    f.return();
   };
   cluster.init();
   cluster.sync(syncColl);
