@@ -1,4 +1,4 @@
-# Archived Project
+# This is a archived project
 
 Meteor Cluster is now retired & Meteor's Collection implementation implementation with [Oplog](https://github.com/meteor/meteor/wiki/Oplog-Observe-Driver) support can be used to run a cluster of Meteor nodes.
 
