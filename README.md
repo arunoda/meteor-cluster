@@ -1,6 +1,6 @@
-# This is a archived project
+# This is an archived project
 
-## Are you looking for the newer project [meteorhacks:cluster](https://github.com/meteorhacks/cluster) ?
+## Are you looking for our newest project [meteorhacks:cluster](https://github.com/meteorhacks/cluster) ?
 
 Meteor Cluster is now retired & Meteor's Collection implementation implementation with [Oplog](https://github.com/meteor/meteor/wiki/Oplog-Observe-Driver) support can be used to run a cluster of Meteor nodes.
 
